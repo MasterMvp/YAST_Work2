@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp"/>
+            <stroke android:color="#40afaa" android:width="1dp" />
+            <solid android:color="#e7f40899"/>
+        </shape>
+    </item>
+    <!-- 默认状态 一定放在最后一位 -->
+    <item >
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp"/>
+            <stroke android:color="#40afaa" android:width="1dp" />
+            <solid android:color="#aa752bab"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/msg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙信息:   "
+            android:textColor="#0000ff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/act_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/msg_1"
+            android:text="未连接"
+            android:textColor="#6ed26e"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/printmes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打印机信息:   "
+            android:textColor="#c7c675"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/printmes"
+            android:textColor="#6ed26e"
+            android:text="未连接"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/act_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/myselector"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:onClick="onRefreshClick"
+        android:text="刷         新" />
+
+    <Button
+        android:id="@+id/act_printText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/myselector"
+        android:onClick="onTextClick"
+        android:text="打印面单" />
+
+    <Button
+        android:id="@+id/act_readIDCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onReadIDCardClick"
+        android:background="@drawable/myselector"
+        android:text="读取身份证" />
+
+    <ImageView
+        android:id="@+id/act_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
