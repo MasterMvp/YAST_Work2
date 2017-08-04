@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="请将图像置于框内"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/bt_a"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="#55000000"
+            android:src="@drawable/take_icon"
+            android:padding="18dp"
+            android:scaleType="centerInside"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/flash_light"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/light_on"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="18dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
