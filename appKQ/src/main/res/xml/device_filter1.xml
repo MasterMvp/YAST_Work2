@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <usb-device class="8" />
+   
+     <!-- 
+   	  bLength                18
+	  bDescriptorType         1
+	  bcdUSB               2.00
+	  bDeviceClass            0 (Defined at Interface level)
+	  bDeviceSubClass         0 
+	  bDeviceProtocol         0 
+	  bMaxPacketSize0        64
+	  idVendor           0x0483 SGS Thomson Microelectronics
+	  idProduct          0x5710 Joystick in FS Mode
+	  bcdDevice            2.00
+	  iManufacturer           1 STMicroelectronics
+	  iProduct                2 STM32 Mass Storage
+	  iSerial                 3 6A7D9E7D3831
+	  bNumConfigurations      1
+	 
+     <usb-device vendor-id="‭1155‬" product-id="22288"  class="0"  subclass="0" protocol="0"/> -->
+     
+           <!-- 
+   	  bLength                18
+	  bDescriptorType         1
+	  bcdUSB               2.00
+	  bDeviceClass            0 (Defined at Interface level)
+	  bDeviceSubClass         0 
+	  bDeviceProtocol         0 
+	  bMaxPacketSize0        64
+	  idVendor           0x0483 SGS Thomson Microelectronics
+	  idProduct          0x5720 Joystick in FS Mode
+	  bcdDevice            2.00
+	  iManufacturer           1 STMicroelectronics
+	  iProduct                2 STM32 Mass Storage
+	  iSerial                 3 6A7D9E7D3831
+	  bNumConfigurations      1
+	 
+     <usb-device vendor-id="‭1155‬" product-id="‭22304‬"  class="0"  subclass="0" protocol="0"/> -->
+     
+     
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="#0066FF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银安考勤系统"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setting_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加用户" />
+
+    <Button
+        android:id="@+id/setting_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看用户" />
+
+    <Button
+        android:id="@+id/setting_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除用户" />
+
+
+</LinearLayout>

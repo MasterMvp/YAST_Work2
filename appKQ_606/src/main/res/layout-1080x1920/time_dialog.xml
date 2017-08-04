@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:don="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e2e2e2"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银安考勤系统"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="45sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <attendance.yn.a606a.views.ClockView
+        android:background="#00000000"
+        android:id="@+id/clockView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        don:draw_center_circle="true"
+        don:minute_mark_color="#a2a2a2"
+        don:quarter_mark_color="#000" />
+
+    <TextView
+        android:id="@+id/dialog_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="2017-4-27 11:11"
+        android:textColor="#bb00ff"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/dialog_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="星期四"
+        android:textStyle="bold"
+        android:textColor="#bb00ff"
+        android:textSize="40dp" />
+
+</LinearLayout>

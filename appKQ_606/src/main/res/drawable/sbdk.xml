@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 默认时的背景图片-->
+    <item android:drawable="@mipmap/ptss" android:state_pressed="false" />
+
+    <!-- 触摸模式下单击时的背景图片-->
+    <item android:drawable="@mipmap/ptss_click" android:state_pressed="true" />
+
+</selector>

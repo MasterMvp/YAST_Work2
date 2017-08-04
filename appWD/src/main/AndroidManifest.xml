@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="risks.yn.a606a">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 必选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 网络通信 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取MAC地址 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读写sdcard，storage等等 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 允许程序录制音频 -->
+
+
+    <!-- 可选 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 获取logcat日志 -->
+    <uses-feature android:name="android.hardware.usb.UsbAccessory" />
+    <uses-feature android:name="android.hardware.usb.UsbManager" />
+    <uses-feature android:name="android.hardware.usb.UsbRequest" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.Main2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" /> -->
+                <!-- <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" /> -->
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.SettingAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.QueryAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.AddUserAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.AddRiskAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.PersonAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.FaceTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.HandlerCheckAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.CameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.SingleUvcCamera"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.SingleUvcCamera2"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.CxQuery"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.RiskMessageAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.RiskJiLu"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".activity.YHAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_FullScreen" />
+    </application>
+
+</manifest>

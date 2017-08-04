@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/main_drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.YinanSoft.phoneface.ui.view.CameraSurfaceView
+                android:id="@+id/cameraSurface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <com.serenegiant.widget.UVCCameraTextureView
+                android:id="@+id/camera_view"
+                android:layout_width="102dp"
+                android:layout_height="126dp"
+                android:layout_alignParentRight="true" />
+
+            <com.YinanSoft.phoneface.ui.view.FrameFaceView
+                android:id="@+id/finderV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/start"-->
+            <!--android:layout_width="220dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="start"-->
+            <!--android:background="#ffffff"-->
+            <!--android:orientation="vertical"-->
+            <!--android:visibility="gone">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/drawer_add"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="@drawable/myselector"-->
+                <!--android:text="添加用户"-->
+                <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/drawer_query"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="@drawable/myselector"-->
+                <!--android:text="查看用户"-->
+                <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/drawer_delete"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="@drawable/myselector"-->
+                <!--android:text="删除用户"-->
+                <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/drawer_qiyeName"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="@drawable/myselector"-->
+                <!--android:text="企业名称"-->
+                <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/drawer_time"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="@drawable/myselector"-->
+                <!--android:text="设置时间"-->
+                <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/drawer_pass"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="@drawable/myselector"-->
+                <!--android:text="修改管理员密码"-->
+                <!--android:textSize="20sp" />-->
+
+        <!--</LinearLayout>-->
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
